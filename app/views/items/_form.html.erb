@@ -1,0 +1,5 @@
+<%= form_for Item.new do |f| %>
+  <%= f.label "Thing to do" %>
+  <%= f.text_field :name, placeholder: "Enter to-do list item" %>
+  <%= f.submit "Add to list" %>
+<% end %>
