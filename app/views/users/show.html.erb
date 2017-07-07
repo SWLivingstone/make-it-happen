@@ -9,6 +9,7 @@
         <% Item.where(user_id: current_user).each do |item| %>
           <li>
             <%= item.name %>
+            <%= link_to "", item, method: :delete, data: {confirm: "Are you sure that you have completed this item?"}, remote: true, class: 'glyphicon glyphicon-ok' %>
           </li>
         <% end %>
       </ul>
