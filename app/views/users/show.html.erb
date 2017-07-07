@@ -10,6 +10,10 @@
           <li>
             <%= item.name %>
             <%= link_to "", item, method: :delete, data: {confirm: "Are you sure that you have completed this item?"}, remote: true, class: 'glyphicon glyphicon-ok' %>
+            <br />
+            <small>
+              added <%= time_ago_in_words(item.created_at) %> ago
+            </small>            
           </li>
         <% end %>
       </ul>
