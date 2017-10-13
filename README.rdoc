@@ -1,4 +1,6 @@
 ## Make it Happen: a web app to create a to-do list!
+
+
 ## Getting started
 
 1. Clone repo
